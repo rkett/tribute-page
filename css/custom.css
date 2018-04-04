@@ -4,9 +4,52 @@
 * Selectors
 ***/
 
+h1,h2,h3,h4,h5,p {
+    font-family: Helvetica, Verdana;
+}
+
+p {
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
 /***
 * Classes
 ***/
+
+.portrait-image {
+    border-color: black;
+    border-width: 20px;
+    border-radius: 150%;
+}
+
+.box-shadow {
+    box-shadow: 1px 1px 30px -5px;
+}
+
+.container {
+    padding: 20px;
+    margin: auto;
+    width: 75%;
+    font-size: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.image-center {
+    display: block;
+    margin: auto;
+    width: 30%;
+}
 
 /***
 * ID Selectors

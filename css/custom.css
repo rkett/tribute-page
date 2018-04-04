@@ -1,7 +1,7 @@
 /*Custom CSS*/
 
 /*** 
-* Selectors
+* Element Selectors
 ***/
 
 h1,h2,h3,h4,h5,p {
@@ -13,7 +13,7 @@ p {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 h2 {
@@ -27,7 +27,7 @@ h2 {
 .portrait-image {
     border-color: black;
     border-width: 20px;
-    border-radius: 150%;
+    border-radius: 30%;
 }
 
 .box-shadow {
@@ -35,8 +35,9 @@ h2 {
 }
 
 .container {
-    padding: 20px;
-    margin: auto;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
     width: 75%;
     font-size: 30px;
 }
@@ -47,9 +48,19 @@ h2 {
 
 .image-center {
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 30%;
 }
+
+.timeline-line {
+    background: black;
+    width: 1px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
 
 /***
 * ID Selectors

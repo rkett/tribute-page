@@ -97,13 +97,18 @@ body {
     padding-top: 20px;
 }
 
-.timeline-fade {
-    
-}
 /***
 * ID Selectors
 ***/
 
 #araki {
     color: #3ef2cb;
+}
+
+#timeline-fade-1, 
+#timeline-fade-2,
+#timeline-fade-3,
+#timeline-fade-4 {
+    /*display: inline;*/
+    opacity: 0;
 }

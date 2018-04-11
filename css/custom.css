@@ -95,6 +95,11 @@ body {
     width: 300px;
     height: 370px;
     padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text-orange {
+    color: #FCA102;
 }
 
 /***
@@ -108,7 +113,18 @@ body {
 #timeline-fade-1, 
 #timeline-fade-2,
 #timeline-fade-3,
-#timeline-fade-4 {
-    /*display: inline;*/
+#timeline-fade-4,
+#timeline-fade-5,
+#timeline-fade-6,
+#timeline-fade-7,
+#timeline-fade-8,
+#timeline-fade-9,
+#timeline-fade-10,
+#timeline-fade-11,
+#timeline-fade-12,
+#timeline-fade-13,
+#timeline-fade-14,
+#timeline-fade-15,
+#timeline-fade-16 {
     opacity: 0;
 }

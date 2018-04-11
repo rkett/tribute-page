@@ -34,6 +34,14 @@ body {
     background-color: #211c1d;
 }
 
+a {
+    color: hotpink;
+}
+
+a:visited {
+    color: #66ff99;
+}
+
 /***
 * Classes
 ***/
@@ -85,8 +93,17 @@ body {
 .timeline-image {
     width: 300px;
     height: 370px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    box-shadow: 8px 8px #FA4742;
+}
+
+.hiropose {
+    height: 300px;
+    width: 400px;
     margin-top: 20px;
     margin-bottom: 10px;
     border-style: solid;
@@ -144,6 +161,23 @@ body {
 #timeline-fade-22,
 #timeline-fade-23,
 #timeline-fade-24,
-#timeline-fade-25 {
+#timeline-fade-25,
+#timeline-fade-26,
+#timeline-fade-27,
+#timeline-fade-28,
+#timeline-fade-29,
+#timeline-fade-30,
+#timeline-fade-31,
+#timeline-fade-32,
+#timeline-fade-33,
+#timeline-fade-34,
+#timeline-fade-35,
+#timeline-fade-36,
+#timeline-fade-37,
+#timeline-fade-38,
+#timeline-fade-39,
+#timeline-fade-40,
+#timeline-fade-41,
+#timeline-fade-42 {
     opacity: 0;
 }

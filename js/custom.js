@@ -41,8 +41,8 @@ $(window).scroll(function() {
     if (index < total_timeline_fade) {
         element_top = Math.floor($("#timeline-fade-"+index).offset().top);
         element_bot = element_top + Math.floor($("#timeline-fade-"+index).outerHeight());
-        window_top = $(this).scrollTop();
-        window_bot = window_top + $(this).height();
+        window_top = Math.floor($(this).scrollTop());
+        window_bot = window_top + Math.floor($(this).height());
         console.log("ELE TOP"+element_bot); // XXX
         console.log("ELE BOT"+element_top); // XXX
         console.log("WIN TOP"+window_top); // XXX

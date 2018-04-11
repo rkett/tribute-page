@@ -1,4 +1,4 @@
-/*Custom CSS*/
+/* Custom CSS */
 
 /*** 
 * Element Selectors
@@ -114,6 +114,10 @@ body {
 
 #araki {
     color: #3ef2cb;
+}
+
+#jjba {
+    color: #FC5DE4;
 }
 
 #timeline-fade-1,

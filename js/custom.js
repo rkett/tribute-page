@@ -3,9 +3,6 @@
 */
 
 
-var dict = {};
-var current_height = [];
-var scroll_pos = 0;
 
 /*
 * Initialize the window.

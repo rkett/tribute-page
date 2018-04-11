@@ -92,6 +92,7 @@ body {
     border-style: solid;
     border-width: 5px;
     border-color: white;
+    box-shadow: 8px 8px #FA4742;
 }
 
 .card {
@@ -115,7 +116,7 @@ body {
     color: #3ef2cb;
 }
 
-#timeline-fade-1, 
+#timeline-fade-1,
 #timeline-fade-2,
 #timeline-fade-3,
 #timeline-fade-4,
@@ -131,6 +132,14 @@ body {
 #timeline-fade-14,
 #timeline-fade-15,
 #timeline-fade-16,
-#timeline-fade-17 {
+#timeline-fade-17,
+#timeline-fade-18,
+#timeline-fade-19,
+#timeline-fade-20,
+#timeline-fade-21,
+#timeline-fade-22,
+#timeline-fade-23,
+#timeline-fade-24,
+#timeline-fade-25 {
     opacity: 0;
 }

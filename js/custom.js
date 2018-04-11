@@ -39,8 +39,8 @@ while(exit == 0) {
 */
 $(window).scroll(function() {
     if (index < total_timeline_fade) {
-        element_top = $("#timeline-fade-"+index).offset().top;
-        element_bot = element_top + $("#timeline-fade-"+index).outerHeight();
+        element_top = Math.floor($("#timeline-fade-"+index).offset().top);
+        element_bot = element_top + Math.floor($("#timeline-fade-"+index).outerHeight());
         window_top = $(this).scrollTop();
         window_bot = window_top + $(this).height();
         console.log("ELE TOP"+element_bot); // XXX
@@ -50,7 +50,7 @@ $(window).scroll(function() {
     };
 
     /* Logic courtesy of https://stackoverflow.com/questions/20791374/jquery-check-if-element-is-visible-in-viewport?lq=1 */
-    if ((element_top > window_top && element_bot < window_bot)) {
+    if ((element_top*0.9 >= window_top && element_bot*0.9 <= window_bot)) {
         $("#timeline-fade-"+index).css("opacity","1");
         $("#timeline-fade-"+index).css("display", "none");
         $("#timeline-fade-"+index).fadeIn(1000);

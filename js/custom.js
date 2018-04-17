@@ -1,9 +1,9 @@
 /*
 * Initialize the window.
-* Set's opacity of #timeline-fade-1 to 100%
-* simultaenously hides it, and then fades it in.
 */
-$(window).ready(function() {});
+$(window).ready(function() {
+    // Window is ready.
+});
 
 /* Variables declared and initalized. */
 var element_top         = 0; // Top of current element.
@@ -13,6 +13,7 @@ var window_bot          = 0; // Bottom of window.
 var exit                = 0; // For the while loop.
 var index               = 1; // For scrolling down.
 var total_timeline_fade = 1; // Length of total timeline elements.
+var araki_top           = Math.floor($("#araki").offset().top); // Top of Araki Image.
 
 /* Acquire the total number of timeline-fade elements we have. */
 while(exit == 0) {
@@ -39,21 +40,29 @@ while(exit == 0) {
 */
 $(window).scroll(function() {
     if (index < total_timeline_fade) {
-        element_top = Math.floor($("#timeline-fade-"+index).offset().top);
-        element_bot = element_top + Math.floor($("#timeline-fade-"+index).outerHeight());
-        window_top = Math.floor($(this).scrollTop());
-        window_bot = window_top + Math.floor($(this).height());
-        console.log("ELE TOP"+element_bot); // XXX
-        console.log("ELE BOT"+element_top); // XXX
-        console.log("WIN TOP"+window_top); // XXX
-        console.log("WIN BOT"+window_bot); // XXX
+        element_top = Math.floor($("#timeline-fade-" + index).offset().top);
+        element_bot = element_top + Math.floor($("#timeline-fade-" + index).outerHeight());
+        window_top  = Math.floor($(this).scrollTop());
+        window_bot  = window_top + Math.floor($(this).height());
     };
 
-    /* Logic courtesy of https://stackoverflow.com/questions/20791374/jquery-check-if-element-is-visible-in-viewport?lq=1 */
+    /* 
+    * Logic courtesy of https://stackoverflow.com/questions/20791374/jquery-check-if-element-is-visible-in-viewport?lq=1 
+    */
     if ((element_top >= window_top && element_bot <= window_bot)) {
-        $("#timeline-fade-"+index).css("opacity","1");
-        $("#timeline-fade-"+index).css("display", "none");
-        $("#timeline-fade-"+index).fadeIn(1000);
+        $("#timeline-fade-" + index).css("opacity", "1");
+        $("#timeline-fade-" + index).css("display", "none");
+        $("#timeline-fade-" + index).fadeIn(1000);
         index = index + 1;
+    };
+
+    /* 
+    * Allows our scroll-to-top arrow to appear/go-away based on scrollTops()'s position 
+    * relative to #araki element.
+    */
+    if (Math.floor($(this).scrollTop()) >= araki_top) {
+        $("#up-arrow").css("display", "block");
+    } else if (Math.floor($(this).scrollTop()) < araki_top) {
+        $("#up-arrow").css("display", "none");
     };
 });

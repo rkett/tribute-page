@@ -32,6 +32,7 @@ h3 {
 
 body {
     background-color: #211c1d;
+    maring:0px;
 }
 
 a {
@@ -40,6 +41,11 @@ a {
 
 a:visited {
     color: #66ff99;
+}
+
+body footer {
+    min-width: 100%;
+    max-width: 180%;
 }
 
 /***
@@ -65,11 +71,6 @@ a:visited {
     width: 75%;
     font-size: 30px;
 }
-
-.text-center {
-    text-align: center;
-}
-
 
 .text-padding {
     padding: 10px;
@@ -123,6 +124,19 @@ a:visited {
 
 .text-orange {
     color: #FCA102;
+}
+
+.text-center p {
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-footer {
+    text-align: center;
 }
 
 /***
@@ -180,4 +194,10 @@ a:visited {
 #timeline-fade-41,
 #timeline-fade-42 {
     opacity: 0;
+}
+
+#up-arrow {
+    text-align: right;
+    position: fixed;
+    display: none;
 }

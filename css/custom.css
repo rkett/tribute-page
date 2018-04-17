@@ -139,6 +139,29 @@ body footer {
     text-align: center;
 }
 
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-bottom: 16px solid #ffe500;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    margin : 10px;
+}
+
+.arrow-up-embed {
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid #211c1d;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin: -8px;
+    margin-top: 6px
+}
+
+.arrow-up:hover {
+    border-bottom: 16px solid #ff26d3;
+}
+
 /***
 * ID Selectors
 ***/
@@ -197,7 +220,7 @@ body footer {
 }
 
 #up-arrow {
-    text-align: right;
+    text-align: left;
     position: fixed;
     display: none;
 }
